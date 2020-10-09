@@ -9,9 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-<<<<<<< HEAD
-    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter:5.4.2" level="project" />
-=======
+
     <orderEntry type="module-library" scope="TEST">
       <library name="JUnit4">
         <CLASSES>
@@ -38,6 +36,5 @@
         <SOURCES />
       </library>
     </orderEntry>
->>>>>>> basic
   </component>
 </module>

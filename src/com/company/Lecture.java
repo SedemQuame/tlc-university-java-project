@@ -34,6 +34,10 @@ public class Lecture {
         this.roll_call.add(student);
     }
 
+    public int getRollCallSize(){
+        return(this.roll_call.size());
+    }
+
     public double getHighestAverageGrade() {
         double highest_avg_grade = 0;
         for (Student student : this.roll_call) {

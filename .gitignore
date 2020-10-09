@@ -1,6 +1,3 @@
-./idea
-.idea/aws.xml
-.idea/codeStyles/
-.idea/misc.xml
 
+./idea/*
 

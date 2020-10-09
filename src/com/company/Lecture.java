@@ -3,14 +3,14 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lecture{
+public class   Lecture{
     private String course_name;
     private String course_title;
     private List<Student> roll_call;
 
     public Lecture(String course_name, String course_title) {
         this.course_name = course_name;
-        this.course_title = course_title;
+i        this.course_title = course_title;
         this.roll_call = new ArrayList();
     }
 

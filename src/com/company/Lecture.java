@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lecture{
+public class Lecture {
     private String course_name;
     private String course_title;
     private List<Student> roll_call;
@@ -30,7 +30,18 @@ public class Lecture{
         this.course_title = course_title;
     }
 
-    public void enter(Student student){
+    public void enter(Student student) {
         this.roll_call.add(student);
     }
+
+    public double getHighestAverageGrade() {
+        double highest_avg_grade = 0;
+        for (Student student : this.roll_call) {
+            if (student.getAvg_grade() > highest_avg_grade) {
+                highest_avg_grade = student.getAvg_grade();
+            }
+        }
+        return highest_avg_grade;
+    }
+
 }

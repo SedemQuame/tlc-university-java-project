@@ -55,13 +55,13 @@ public class Student {
 
 
     public double getAvg_grade() {
-        double total =0, avg;
-        for(double grade :grades){
-            total=+ grade;
+        double total = 0, avg;
+        for (double grade : grades) {
+            total = +grade;
         }
-        int number_of_grades=grades.size();
-        avg=total/number_of_grades;
-        this.avg_grade=avg;
+        int number_of_grades = grades.size();
+        avg = total / number_of_grades;
+        this.avg_grade = avg;
         return avg_grade;
     }
 }

@@ -9,12 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StudentTest {
 
-
-
-
-
-
-
     @org.junit.jupiter.api.Test
     void getAvg_grade() {
        int [] st_grade={20,20,20};

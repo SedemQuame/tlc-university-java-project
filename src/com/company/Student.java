@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -7,11 +8,11 @@ public class Student {
     private String ID;
 
 
-    private List<Double> grades;
+    private List<Integer> grades;
     private double avg_grade;
     private String level;
 
-    public Student(String name, String ID, List<Double> grades, String level) {
+    public Student(String name, String ID, ArrayList<Integer> grades, String level) {
         this.name = name;
         this.ID = ID;
         this.grades = grades;
@@ -36,11 +37,11 @@ public class Student {
     }
 
 
-    public List<Double> getGrades() {
+    public List<Integer> getGrades() {
         return grades;
     }
 
-    public void setGrades(List<Double> grades) {
+    public void setGrades(List<Integer> grades) {
         this.grades = grades;
     }
 

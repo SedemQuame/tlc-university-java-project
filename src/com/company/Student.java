@@ -7,11 +7,11 @@ public class Student {
     private String ID;
 
 
-    private List<Double> grades;
+    private int [] grades;
     private double avg_grade;
     private String level;
 
-    public Student(String name, String ID, List<Double> grades, String level) {
+    public Student(String name, String ID, int [] grades, String level) {
         this.name = name;
         this.ID = ID;
         this.grades = grades;
@@ -36,14 +36,17 @@ public class Student {
     }
 
 
-    public List<Double> getGrades() {
+    public int[] getGrades() {
         return grades;
     }
 
-    public void setGrades(List<Double> grades) {
+    public void setGrades(int[] grades) {
         this.grades = grades;
     }
 
+    public void setAvg_grade(double avg_grade) {
+        this.avg_grade = avg_grade;
+    }
 
     public String getLevel() {
         return level;
@@ -59,7 +62,7 @@ public class Student {
         for (double grade : grades) {
             total = +grade;
         }
-        int number_of_grades = grades.size();
+        int number_of_grades = 4 ;
         avg = total / number_of_grades;
         this.avg_grade = avg;
         return avg_grade;

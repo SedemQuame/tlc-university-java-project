@@ -12,6 +12,7 @@ public class Student implements HasLevel, Nameable {
         this.name = name;
         this.ID = ID;
         this.grades = grades;
+        this.level=level;
         getAvg_grade();
     }
 

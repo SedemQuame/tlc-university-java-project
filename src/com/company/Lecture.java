@@ -3,11 +3,8 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD
 public class Lecture {
-=======
-public class   Lecture{
->>>>>>> basic
+
     private String course_name;
     private String course_title;
     private List<Student> roll_call;

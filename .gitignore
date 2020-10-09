@@ -1,6 +1,5 @@
-./idea
-.idea/aws.xml
-.idea/codeStyles/
-.idea/misc.xml
 
+./idea/*
+./out/*
+./tlc-university-java-project.iml
 

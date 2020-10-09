@@ -1,25 +1,15 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Student {
     private String name;
     private String ID;
-<<<<<<< HEAD
-
-
-=======
->>>>>>> basic
     private int [] grades;
     private double avg_grade;
     private String level;
 
-<<<<<<< HEAD
-    public Student(String name, String ID, int [] grades, String level) {
-=======
+
     public Student(String name, String ID, int []grades, String level) {
->>>>>>> basic
+
         this.name = name;
         this.ID = ID;
         this.grades = grades;
@@ -48,11 +38,8 @@ public class Student {
         return grades;
     }
 
-<<<<<<< HEAD
-    public void setGrades(int[] grades) {
-=======
+
     public void setGrades(int[]grades) {
->>>>>>> basic
         this.grades = grades;
     }
 
@@ -70,15 +57,6 @@ public class Student {
 
 
     public double getAvg_grade() {
-<<<<<<< HEAD
-        double total = 0, avg;
-        for (double grade : grades) {
-            total = +grade;
-        }
-        int number_of_grades = 4 ;
-        avg = total / number_of_grades;
-        this.avg_grade = avg;
-=======
         double total =0.00, avg;
         for(int grade :grades){
             total =total+ grade;
@@ -86,7 +64,7 @@ public class Student {
         int number_of_grades=grades.length;
         avg=total/number_of_grades;
         this.avg_grade=avg;
->>>>>>> basic
+
         return avg_grade;
     }
 }

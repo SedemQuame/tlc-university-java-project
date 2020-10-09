@@ -2,7 +2,9 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class Lecture {
+
     private String course_name;
     private String course_title;
     private List<Student> roll_call;

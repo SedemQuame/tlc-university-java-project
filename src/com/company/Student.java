@@ -1,22 +1,20 @@
 package com.company;
 
-public class Student {
+
+public class Student implements HasLevel, Nameable {
     private String name;
     private String ID;
     private int [] grades;
     private double avg_grade;
-    private String level;
+   private  Level level;
 
-
-    public Student(String name, String ID, int []grades, String level) {
-
+    public Student(String name, String ID, int[] grades, String level) {
         this.name = name;
         this.ID = ID;
         this.grades = grades;
-        this.level = level;
         getAvg_grade();
     }
-
+    @Override
     public String getName() {
         return name;
     }
@@ -39,7 +37,7 @@ public class Student {
     }
 
 
-    public void setGrades(int[]grades) {
+    public void setGrades(int[] grades) {
         this.grades = grades;
     }
 
@@ -47,24 +45,21 @@ public class Student {
         this.avg_grade = avg_grade;
     }
 
-    public String getLevel() {
-        return level;
-    }
-
-    public void setLevel(String level) {
-        this.level = level;
-    }
-
-
     public double getAvg_grade() {
-        double total =0.00, avg;
-        for(int grade :grades){
-            total =total+ grade;
+        double total = 0.00, avg;
+        for (int grade : grades) {
+            total = total + grade;
         }
-        int number_of_grades=grades.length;
-        avg=total/number_of_grades;
-        this.avg_grade=avg;
+        int number_of_grades = grades.length;
+        avg = total / number_of_grades;
+        this.avg_grade = avg;
 
         return avg_grade;
     }
+    @Override
+    public Level getLevel( ){
+        return this.level;
+    }
+
+
 }

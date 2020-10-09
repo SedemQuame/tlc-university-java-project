@@ -16,4 +16,6 @@ class StudentTest {
         Student student= new Student("Emma","1234A", st_grade, "100" );
         assertEquals(20, student.getAvg_grade());
     }
+
+
 }

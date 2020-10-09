@@ -6,13 +6,11 @@ import java.util.List;
 public class Student {
     private String name;
     private String ID;
-
-
-    private List<Integer> grades;
+    private int [] grades;
     private double avg_grade;
     private String level;
 
-    public Student(String name, String ID, ArrayList<Integer> grades, String level) {
+    public Student(String name, String ID, int []grades, String level) {
         this.name = name;
         this.ID = ID;
         this.grades = grades;
@@ -37,11 +35,11 @@ public class Student {
     }
 
 
-    public List<Integer> getGrades() {
+    public int[] getGrades() {
         return grades;
     }
 
-    public void setGrades(List<Integer> grades) {
+    public void setGrades(int[]grades) {
         this.grades = grades;
     }
 
@@ -56,11 +54,11 @@ public class Student {
 
 
     public double getAvg_grade() {
-        double total =0, avg;
-        for(double grade :grades){
-            total=+ grade;
+        double total =0.00, avg;
+        for(int grade :grades){
+            total =total+ grade;
         }
-        int number_of_grades=grades.size();
+        int number_of_grades=grades.length;
         avg=total/number_of_grades;
         this.avg_grade=avg;
         return avg_grade;

@@ -19,13 +19,13 @@ class LectureTest {
     int[] studentGrade5 = {93, 90, 84, 65};
 
     //creating student classes
-    Student student_1 = new Student("Abena Serwaa", "635", studentGrade1, "Level 200 ");
-    Student student_2 = new Student("Aba Serwaa", "636", studentGrade2, "Level 200 ");
-    Student student_3 = new Student("Ama Serwaa", "637", studentGrade3, "Level 200 ");
+    Student student_1 = new Student("Abena Serwaa", "635", studentGrade1, Level.l100);
+    Student student_2 = new Student("Aba Serwaa", "636", studentGrade2, Level.l200);
+    Student student_3 = new Student("Ama Serwaa", "637", studentGrade3, Level.l100);
 
     //inserting a few naughty students into the lecture.
-    NaughtyStudent student_4 = new NaughtyStudent("Justin Ankobrahene", "ABC23", studentGrade4, "200");
-    NaughtyStudent student_5 = new NaughtyStudent("Kweku Meynu", "AC123", studentGrade5, "200");
+    NaughtyStudent student_4 = new NaughtyStudent("Justin Ankobrahene", "ABC23", studentGrade4, Level.l100);
+    NaughtyStudent student_5 = new NaughtyStudent("Kweku Meynu", "AC123", studentGrade5, Level.l200);
 
 
     @Test

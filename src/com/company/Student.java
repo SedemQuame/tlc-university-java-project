@@ -1,24 +1,23 @@
-package com.company;
 
+package com.company;
 
 public class Student implements HasLevel, Nameable {
     private String name;
     private String ID;
     private int [] grades;
     private double avg_grade;
-   private  Level level;
+    private  Level level;
 
-    public Student(String name, String ID, int[] grades, String level) {
+    public Student(String name, String ID, int[] grades, Level level) {
         this.name = name;
         this.ID = ID;
         this.grades = grades;
         getAvg_grade();
     }
-    @Override
-    public String getName() {
-        return name;
-    }
 
+    protected void setAvg_grade(double falseAverage) {
+        this.avg_grade= falseAverage;
+    }
     public void setName(String name) {
         this.name = name;
     }
@@ -37,13 +36,12 @@ public class Student implements HasLevel, Nameable {
     }
 
 
-    public void setGrades(int[] grades) {
+
+    public void setGrades(int[]grades) {
         this.grades = grades;
     }
 
-    public void setAvg_grade(double avg_grade) {
-        this.avg_grade = avg_grade;
-    }
+
 
     public double getAvg_grade() {
         double total = 0.00, avg;
@@ -60,6 +58,17 @@ public class Student implements HasLevel, Nameable {
     public Level getLevel( ){
         return this.level;
     }
+    @Override
+    public String getName() {
+        return name;
+    }
+
 
 
 }
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+package com.company;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student {
+    private String name;
+    private String ID;
+
+
+<<<<<<< HEAD
+    private int [] grades;
+    private double avg_grade;
+    private String level;
+
+    public Student(String name, String ID, int [] grades, String level) {
+=======
+    private List<Integer> grades;
+    private double avg_grade;
+    private String level;
+
+    public Student(String name, String ID, ArrayList<Integer> grades, String level) {
+>>>>>>> basic
+        this.name = name;
+        this.ID = ID;
+        this.grades = grades;
+        this.level = level;
+        getAvg_grade();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+
+<<<<<<< HEAD
+    public int[] getGrades() {
+        return grades;
+    }
+
+    public void setGrades(int[] grades) {
+=======
+    public List<Integer> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(List<Integer> grades) {
+>>>>>>> basic
+        this.grades = grades;
+    }
+
+    public void setAvg_grade(double avg_grade) {
+        this.avg_grade = avg_grade;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+
+    public double getAvg_grade() {
+        double total = 0, avg;
+        for (double grade : grades) {
+            total = +grade;
+        }
+        int number_of_grades = 4 ;
+        avg = total / number_of_grades;
+        this.avg_grade = avg;
+        return avg_grade;
+    }
+}

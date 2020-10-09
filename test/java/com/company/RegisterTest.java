@@ -14,9 +14,9 @@ class RegisterTest {
     int[] studentGrade1 = {70, 89, 70, 76};
     int[] studentGrade2 = {54, 56, 86, 56};
     int[] studentGrade3 = {89, 87, 50, 55};
-    Student student_1 = new Student("Abena Serwaa", "635", studentGrade1, "Level 200 ");
-    Student student_2 = new Student("Aba Serwaa", "636", studentGrade2, "Level 200 ");
-    Student student_3 = new Student("Ama Serwaa", "637", studentGrade3, "Level 200 ");
+    Student student_1 = new Student("Abena Serwaa", "635", studentGrade1,  Level.l100);
+    Student student_2 = new Student("Aba Serwaa", "636", studentGrade2, Level.l100);
+    Student student_3 = new Student("Ama Serwaa", "637", studentGrade3, Level.l100);
 
     @Test
     void getRegister() {

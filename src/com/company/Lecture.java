@@ -10,7 +10,7 @@ public class   Lecture{
 
     public Lecture(String course_name, String course_title) {
         this.course_name = course_name;
-i        this.course_title = course_title;
+        this.course_title = course_title;
         this.roll_call = new ArrayList();
     }
 

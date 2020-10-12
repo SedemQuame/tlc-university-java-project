@@ -1,6 +1,9 @@
 
 package com.company;
 
+import java.util.Arrays;
+import java.util.stream.DoubleStream;
+
 public class Student implements HasLevel, Nameable {
     private String name;
     private String ID;
@@ -64,7 +67,9 @@ public class Student implements HasLevel, Nameable {
         return name;
     }
 
-
+    public DoubleStream streamGrade(){
+        return Arrays.stream(grades).asDoubleStream();
+    }
 
 }
 
